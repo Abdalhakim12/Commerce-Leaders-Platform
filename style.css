@@ -1,0 +1,330 @@
+/* style.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Cairo", sans-serif;
+}
+
+body {
+  background: #f9fafc;
+  color: #222;
+  direction: rtl;
+  line-height: 1.7;
+}
+.video-loop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  opacity: 0.2;
+  z-index: -1;
+}
+
+/* الهيدر */
+header {
+  background: #004aad;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+header .logo {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+header nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+}
+
+header nav a:hover {
+  font-size: 16px;
+}
+
+/* الهيرو */
+.hero {
+  background: linear-gradient(135deg, #004aad, #00c896);
+  color: #fff;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+h1 {
+  display: inline-block;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.9;
+  white-space: nowrap;
+  overflow: hidden;
+  direction: rtl;
+  border-left: 3px solid rgba(255, 255, 255, 0.95);
+  padding-left: 8px;
+  animation: typing 5s steps(46, end) infinite, 1s step-end infinite;
+}
+
+@keyframes typing {
+  0% {
+    width: 0ch;
+  }
+  40% {
+    width: 46ch;
+  }
+  60% {
+    width: 46ch;
+  }
+  100% {
+    width: 0ch;
+  }
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 150px;
+}
+/* المواد */
+.h2-subjects {
+  display: flex;
+  justify-content: center;
+  color: #004aad;
+  margin-top: 30px;
+}
+.subjects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 25px;
+  padding: 40px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.circle {
+  background: white;
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.circle span {
+  font-weight: 600;
+  color: #014f9d;
+  z-index: 2;
+  transition: color 0.3s ease;
+}
+
+/* زرار الدخول */
+.circle a {
+  margin-top: 10px;
+  padding: 6px 14px;
+  background: #00c184;
+  color: white;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  text-decoration: none;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+}
+
+/* لما  امر بالماوس */
+.circle:hover {
+  transform: scale(1.08);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+  background: linear-gradient(135deg, #014f9d, #00c184);
+}
+.circle:hover span {
+  color: white;
+}
+.circle:hover a {
+  opacity: 1;
+}
+
+/* الامتحانات السابقة */
+.exams {
+  padding: 50px 20px;
+  text-align: center;
+  background: #fafafa;
+}
+.gif {
+  margin-bottom: -200px;
+  margin-top: -100px;
+}
+.exams h2 {
+  margin-bottom: 20px;
+  color: #004aad;
+}
+
+.exams ul {
+  list-style: none;
+}
+
+.exams li {
+  margin: 10px 0;
+}
+
+.exams a {
+  text-decoration: none;
+  color: #00c896;
+  font-weight: bold;
+}
+
+.exams a:hover {
+  text-decoration: underline;
+}
+
+/* الجدول */
+.schedule {
+  padding: 50px 20px;
+  text-align: center;
+}
+table {
+  border-radius: 15px;
+}
+.schedule h2 {
+  margin-bottom: 20px;
+  color: #004aad;
+}
+
+.schedule table {
+  width: 80%;
+  margin: auto;
+  border-collapse: collapse;
+  background: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.schedule th,
+.schedule td {
+  border: 1px solid #ddd;
+  padding: 12px;
+}
+
+.schedule th {
+  background: #004aad;
+  color: #fff;
+}
+.h2-channels {
+  display: flex;
+  justify-content: center;
+  color: #004aad;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+.channels {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 50px;
+  margin-bottom: 40px;
+}
+
+.channels img {
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.channels a {
+  text-decoration: none;
+  margin-right: 30px;
+  font-size: 20px;
+  color: #00c896;
+}
+a p {
+  margin-right: 120px;
+  margin-top: 20px;
+}
+.img-channel:hover {
+  transform: scale(1.06);
+}
+
+/* النصائح */
+.tips {
+  padding: 50px 20px;
+  text-align: center;
+  background: #f0fff8;
+  overflow: hidden;
+}
+
+.tips h2 {
+  margin-bottom: 15px;
+  color: #00c896;
+  font-size: 50px;
+}
+.tips p {
+  animation: scale 3s infinite;
+  padding-top: 55px;
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 30px;
+}
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.1);
+    color: #00c896;
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  75% {
+    transform: scale(1.1);
+    color: #00c896;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/* الفوتر */
+footer {
+  background: #004aad;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+.coming-soon {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #014f9d;
+  text-align: center;
+  margin: 40px 0;
+  letter-spacing: 3px;
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+}
