@@ -21,6 +21,29 @@
     </script>
   </head>
   <body>
+    <!-- overlay كلمة المرور -->
+    <div id="gate" class="gate">
+      <div class="gate-box">
+        <h2>أدخل كلمة المرور للمتابعة</h2>
+        <input
+          id="pw"
+          type="password"
+          placeholder="اكتب كلمة المرور هنا"
+          aria-label="password"
+        />
+        <button id="submit">دخول</button>
+        <p id="msg" class="msg"></p>
+        <p class="small">
+          لو معاك كلمة المرور ادخلها — لو لأ تواصل مع عبدالحكيم
+        </p>
+      </div>
+    </div>
+
+    <!-- باقي محتوى الموقع -->
+    <div id="site" class="site" aria-hidden="true">
+      <!-- هنا كل الصفحة اللي انت عاملها -->
+    </div>
+
     <video class="video-loop" autoplay loop muted>
       <source src="vedio-back.mp4" type="video/mp4" />
     </video>
@@ -57,6 +80,7 @@
       <div class="circle">
         <span> اقتصاد صناعى</span>
         <a href="اقتصاد صناعى.html">دخول</a>
+        <
       </div>
       <div class="circle">
         <span>محاسبة ضريبيبة</span>
@@ -390,5 +414,46 @@
     <footer>
       <p>© 2025 جميع الحقوق محفوظة | Developed by Abdalhakim</p>
     </footer>
+    <script>
+      /* كلمة المرور */
+      (function () {
+        const CORRECT = "student2025"; // ← غيرها للكلمة اللي انت عايزها
+        const gate = document.getElementById("gate");
+        const site = document.getElementById("site");
+        const input = document.getElementById("pw");
+        const btn = document.getElementById("submit");
+        const msg = document.getElementById("msg");
+
+        function unlock() {
+          const v = input.value;
+          if (!v) {
+            msg.textContent = "اكتب كلمة المرور";
+            return;
+          }
+          if (v === CORRECT) {
+            gate.style.display = "none";
+            site.removeAttribute("aria-hidden");
+            try {
+              sessionStorage.setItem("site-unlocked", "1");
+            } catch (e) {}
+          } else {
+            msg.textContent = "كلمة المرور خاطئة";
+            input.value = "";
+          }
+        }
+
+        btn.addEventListener("click", unlock);
+        input.addEventListener("keydown", function (e) {
+          if (e.key === "Enter") unlock();
+        });
+
+        try {
+          if (sessionStorage.getItem("site-unlocked") === "1") {
+            gate.style.display = "none";
+            site.removeAttribute("aria-hidden");
+          }
+        } catch (e) {}
+      })();
+    </script>
   </body>
 </html>
