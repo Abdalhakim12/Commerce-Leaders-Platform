@@ -20,6 +20,7 @@ body {
   min-height: 100%;
   opacity: 0.2;
   z-index: -1;
+  overflow: hidden;
 }
 
 /* الهيدر */
@@ -74,7 +75,7 @@ h1 {
   direction: rtl;
   border-left: 3px solid rgba(255, 255, 255, 0.95);
   padding-left: 8px;
-  animation: typing 5s steps(46, end) infinite, 1s step-end infinite;
+  /* animation: typing 5s steps(46, end) infinite, 1s step-end infinite; */
 }
 
 @keyframes typing {
@@ -378,4 +379,39 @@ footer {
   color: #666;
   font-size: 13px;
   margin-top: 10px;
+}
+
+@media (max-width: 425px) {
+  .declare {
+    display: none;
+  }
+
+  h1 {
+    font-weight: normal;
+    display: none;
+  }
+  .gif {
+    display: none;
+  }
+  .channels {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .schedule {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; /* علشان يبقى سهل في الموبايل */
+  }
+
+  .schedule table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .schedule h2 {
+    margin-right: 120px;
+  }
+  .tips p {
+    font-size: 12px;
+  }
+  .tips h2 {
+    font-size: 30px;
+  }
 }
