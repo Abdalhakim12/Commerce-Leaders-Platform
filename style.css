@@ -415,3 +415,16 @@ footer {
     font-size: 30px;
   }
 }
+@media (min-width: 425px) and (min-width: 768px) {
+  .channels {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .declare {
+    display: none;
+  }
+
+  h1 {
+    font-weight: normal;
+    display: none;
+  }
+}
