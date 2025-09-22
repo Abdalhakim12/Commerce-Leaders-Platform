@@ -271,6 +271,73 @@ a p {
 .img-channel:hover {
   transform: scale(1.06);
 }
+/* كورسات  */
+.h2-course {
+  color: #004aad;
+  display: flex;
+  justify-content: center;
+  font-size: 35px;
+  padding-bottom: 70px;
+  padding-top: 60px;
+}
+.vedio-address {
+  color: #00c184;
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  padding-bottom: 20px;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0; /* مسافة فوق وتحت */
+}
+
+.video-walled {
+  width: 150%;
+  height: 600px;
+  max-width: 1100px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+/* حاوية الزر للتوسيط والتحكم في المسافات */
+.goto-courses-wrap {
+  display: flex;
+  justify-content: center; /* توسيط أفقي */
+  margin: 26px 0 40px; /* مسافة أعلى وأسفل قابلة للتعديل */
+  padding: 0 16px;
+}
+
+/* تصميم الزر */
+.goto-courses-btn {
+  display: inline-block;
+  background: linear-gradient(90deg, #00c896 0%, #0077d9 100%);
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 22px;
+  border-radius: 12px;
+  font-weight: 700;
+  box-shadow: 0 8px 20px rgba(4, 21, 55, 0.12);
+  transition: transform 0.18s cubic-bezier(0.2, 0.9, 0.2, 1), box-shadow 0.18s,
+    filter 0.18s;
+  letter-spacing: 0.2px;
+  text-align: center;
+  direction: rtl;
+}
+
+/* حركة عند المرور */
+.goto-courses-btn:hover,
+.goto-courses-btn:focus {
+  transform: translateY(-4px) scale(1.01);
+  box-shadow: 0 14px 30px rgba(4, 21, 55, 0.16);
+}
+
+/* تأثير "ضغط" لمسة */
+.goto-courses-btn:active {
+  transform: translateY(-1px) scale(0.995);
+  box-shadow: 0 8px 18px rgba(4, 21, 55, 0.12);
+}
 
 /* النصائح */
 .tips {
@@ -329,6 +396,7 @@ footer {
   display: inline-block;
   padding: 10px 20px;
 }
+
 /* بوابة كلمة المرور */
 .gate {
   position: fixed;
@@ -414,8 +482,18 @@ footer {
   .tips h2 {
     font-size: 30px;
   }
+  .vedio-address {
+    font-size: 20px;
+  }
+  .video-walled {
+    height: 300px;
+    width: 400px;
+  }
+  .video-container {
+    overflow: hidden;
+  }
 }
-@media (min-width: 425px) and (min-width: 768px) {
+@media (min-width: 425px) and (max-width: 768px) {
   .channels {
     grid-template-columns: repeat(2, 1fr);
   }
