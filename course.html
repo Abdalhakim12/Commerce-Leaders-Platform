@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>الكورسات - Commerce Leaders</title>
+    <link rel="stylesheet" href="course.css" />
+  </head>
+  <body>
+    <!-- الهيدر -->
+    <header>
+      <h1 class="logo">📚 Commerce Leaders</h1>
+      <nav>
+        <a href="home.html">الرئيسية</a>
+        <a href="contact.html">تواصل معنا</a>
+      </nav>
+    </header>
+
+    <!-- الهيرو -->
+    <section class="hero">
+      <h2>كل الكورسات في مكان واحد</h2>
+      <p>ابحث أو استخدم الفلتر لتلاقي الكورس المناسب بسهولة</p>
+    </section>
+
+    <!-- البحث والفلترة -->
+    <section class="filters">
+      <input type="text" id="search" placeholder="ابحث عن كورس..." />
+      <div class="buttons">
+        <button onclick="filter('all')">الكل</button>
+        <button onclick="filter('accounting')">محاسبة</button>
+        <button onclick="filter('excel')">إكسل</button>
+        <button onclick="filter('فوتوشوب')">فوتوشوب</button>
+        <button onclick="filter('تحليل')">تحليل بيانات</button>
+      </div>
+    </section>
+
+    <!-- الكورسات -->
+    <section class="courses" id="courses">
+      <div class="card excel">
+        <img src="excel.jpg" />
+        <h3>كورس إكسل 2024</h3>
+        <p>
+          هنبدأ بالأساسيات زي الواجهة والمعادلات البسيطة، وبعدها ندخل على الفرز
+          والفلترة، والرسوم البيانية والجداول المحورية. وفي الجزء المتقدم هتتعلم
+          دوال قوية زي XLOOKUP وكمان الماكروز علشان توفر وقتك وتنجز أسرع.
+        </p>
+        <div class="goto-courses-wrap">
+          <a
+            class="goto-courses-btn"
+            href="https://youtube.com/playlist?list=PLoyECfvEFOjYOt0f8CKyj0a_-YnETyKF1&si=PGJ5ncVhz8Xn8B7c"
+            role="button"
+            aria-label="اذهب إلى صفحة الكورسات"
+            target="_blank"
+          >
+            اضغط هنا
+          </a>
+        </div>
+      </div>
+
+      <div class="card accounting">
+        <img src="acc.jpg" />
+        <h3>أساسيات المحاسبة</h3>
+        <p>
+          تعلم مبادئ المحاسبة من الأصول: تسجيل القيود، إعداد القوائم المالية،
+          وفهم دورة المحاسبة بالكامل بطريقة مبسطة وعملية مناسبة لطلاب التجارة
+          والمبتدئين.
+        </p>
+        <div class="goto-courses-wrap">
+          <a
+            class="goto-courses-btn"
+            href="https://youtube.com/playlist?list=PLW_jQt9giml6J6MU7sxv3wQQKvqRQ6-qq&si=kbGiDdIlkR_xbMAH"
+            role="button"
+            aria-label="اذهب إلى صفحة الكورسات"
+            target="_blank"
+          >
+            اضغط هنا
+          </a>
+        </div>
+      </div>
+
+      <div class="card فوتوشوب">
+        <img src="Favorite application in Highschool.jpeg" />
+        <h3>كورس فوتوشوب</h3>
+        <p>
+          كورس كامل لبرنامج الفوتوشوب من الصفر. بعد متخلصه ادخل علي الدروس
+          التطبيقية, انا ضفتها بالترتيب الصحيح عشان باذن الله تخلص الكورس الكامل
+          ده ويبقي مستواك ممتاز في الجرافيك
+        </p>
+        <div class="goto-courses-wrap">
+          <a
+            class="goto-courses-btn"
+            href="https://youtube.com/playlist?list=PLCGqAzOt3ZWPmSA-3QdjeQwg9kLGfnGyU&si=Ug4A5PBm0uIsW3L0"
+            role="button"
+            aria-label="اذهب إلى صفحة الكورسات"
+            target="_blank"
+          >
+            اضغط هنا
+          </a>
+        </div>
+      </div>
+
+      <div class="card تحليل بيانات">
+        <img
+          src="Microsoft Power BI Advanced Training Course (Boot Camp).jpeg"
+        />
+        <h3>كورس power BI</h3>
+        <p>
+          كورس Power BI: اتعلم إزاي تحول البيانات لتقارير ورسوم تفاعلية، تربط
+          مصادر مختلفة، تحلل الأرقام بسهولة، وتعرض النتائج بشكل احترافي يساعدك
+          في الشغل أو الدراسة.
+        </p>
+        <div class="goto-courses-wrap">
+          <a
+            class="goto-courses-btn"
+            href="https://youtube.com/playlist?list=PLXlHqMRg9lAZPJ5loaPck60I91kAwMhT3&si=kVdIQRNt0-hIU9jo"
+            role="button"
+            aria-label="اذهب إلى صفحة الكورسات"
+            target="_blank"
+          >
+            اضغط هنا
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- الفوتر -->
+    <footer>
+      <p>© 2025 جميع الحقوق محفوظة | Developed by Abdalhakim</p>
+    </footer>
+
+    <script>
+      const searchInput = document.getElementById("search");
+      const cards = document.querySelectorAll(".card");
+
+      searchInput.addEventListener("keyup", function () {
+        const term = searchInput.value.toLowerCase();
+        cards.forEach((card) => {
+          const text = card.innerText.toLowerCase();
+          card.style.display = text.includes(term) ? "block" : "none";
+        });
+      });
+
+      function filter(category) {
+        cards.forEach((card) => {
+          if (category === "all" || card.classList.contains(category)) {
+            card.style.display = "block";
+          } else {
+            card.style.display = "none";
+          }
+        });
+      }
+    </script>
+  </body>
+</html>

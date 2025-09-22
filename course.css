@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Cairo", sans-serif;
+}
+
+body {
+  background: #f9fafc;
+  color: #222;
+  line-height: 1.6;
+}
+
+header {
+  background: #004aad;
+  color: #fff;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+header nav a {
+  margin-left: 90px;
+  color: #fff;
+  text-decoration: none;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #004aad, #00c896);
+  color: #fff;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.filters {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.filters input {
+  padding: 10px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+.filters .buttons {
+  margin-top: 10px;
+}
+
+.filters button {
+  padding: 8px 15px;
+  margin: 5px;
+  border: none;
+  border-radius: 6px;
+  background: #00c896;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.filters button:hover {
+  background: #009c75;
+}
+
+.courses {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 40px;
+  width: auto;
+  margin: auto;
+}
+.courses img {
+  max-width: 200px;
+  height: 200px;
+  margin-right: 230px;
+}
+.courses h3 {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+/* حاوية الزر للتوسيط والتحكم في المسافات */
+.goto-courses-wrap {
+  display: flex;
+  justify-content: center; /* توسيط أفقي */
+  margin: 26px 0 40px; /* مسافة أعلى وأسفل قابلة للتعديل */
+  padding: 0 16px;
+}
+
+/* تصميم الزر */
+.goto-courses-btn {
+  display: inline-block;
+  background: linear-gradient(90deg, #00c896 0%, #0077d9 100%);
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 22px;
+  border-radius: 12px;
+  font-weight: 700;
+  box-shadow: 0 8px 20px rgba(4, 21, 55, 0.12);
+  transition: transform 0.18s cubic-bezier(0.2, 0.9, 0.2, 1), box-shadow 0.18s,
+    filter 0.18s;
+  letter-spacing: 0.2px;
+  text-align: center;
+  direction: rtl;
+}
+
+/* حركة عند المرور */
+.goto-courses-btn:hover,
+.goto-courses-btn:focus {
+  transform: translateY(-4px) scale(1.01);
+  box-shadow: 0 14px 30px rgba(4, 21, 55, 0.16);
+}
+
+/* تأثير "ضغط" لمسة */
+.goto-courses-btn:active {
+  transform: translateY(-1px) scale(0.995);
+  box-shadow: 0 8px 18px rgba(4, 21, 55, 0.12);
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  color: #004aad;
+  margin-bottom: 10px;
+}
+
+footer {
+  background: #004aad;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+}
+@media (max-width: 768px) {
+  .courses {
+    grid-template-columns: 1fr; /* عمود واحد فقط */
+    overflow: hidden;
+    margin-left: 20px;
+    justify-content: center;
+  }
+  .courses img {
+    margin-left: 170px;
+  }
+}
