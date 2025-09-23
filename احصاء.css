@@ -107,3 +107,15 @@ footer {
 .exams a:hover {
   text-decoration: underline;
 }
+@media (max-width: 425px) {
+  .gif {
+    max-width: 300px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    overflow: hidden;
+  }
+  .exams p {
+    font-size: 20px;
+    font-weight: bold;
+  }
+}
