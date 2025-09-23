@@ -75,7 +75,7 @@ h1 {
   direction: rtl;
   border-left: 3px solid rgba(255, 255, 255, 0.95);
   padding-left: 8px;
-  /* animation: typing 5s steps(46, end) infinite, 1s step-end infinite; */
+  animation: typing 5s steps(46, end) infinite, 1s step-end infinite;
 }
 
 @keyframes typing {
@@ -101,6 +101,63 @@ h1 {
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 150px;
+}
+body {
+  margin: 0;
+  font-family: "Cairo", sans-serif;
+  background: #f9f9f9;
+}
+
+/* CSS */
+.news-ticker {
+  background: #004aad;
+  color: white;
+  overflow: hidden;
+  white-space: nowrap;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 20px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.news-title {
+  font-weight: bold;
+  padding: 0 15px;
+  background: #e63946;
+  flex-shrink: 0;
+}
+
+.news-track {
+  display: inline-block;
+  padding-left: 100%;
+  animation: ticker 15s linear infinite;
+}
+
+.news-track span {
+  display: inline-block;
+  padding: 0 50px;
+  font-size: 1rem;
+}
+
+/* الأنيميشن */
+@keyframes ticker {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* على الموبايل نخليها أبطأ */
+@media (max-width: 600px) {
+  .news-track {
+    animation: ticker 30s linear infinite;
+  }
 }
 /* المواد */
 .h2-subjects {
@@ -453,9 +510,24 @@ footer {
   .declare {
     display: none;
   }
+  header {
+    display: none;
+  }
+  .hero {
+    height: 20px;
+  }
 
   h1 {
     font-weight: normal;
+    display: none;
+  }
+  .news-items p {
+    transition: color 10s ease-in-out;
+  }
+  .news-items {
+    animation: ticker 10s linear infinite;
+  }
+  .news-title {
     display: none;
   }
   .gif {
