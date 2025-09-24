@@ -73,6 +73,7 @@
         منصة الكلية، وإنما أداة مساعدة للطلاب فقط.
       </p> -->
     </section>
+    
     <!-- قسم الأخبار -->
     <div class="news-ticker">
       <div class="news-track">
@@ -82,6 +83,36 @@
         <span>📢 فاينل الاحصاء كله مقالى </span>
       </div>
     </div>
+    <!-- countdown.html snippet -->
+<section class="countdown-section" aria-label="عداد العد التنازلي">
+  <div class="countdown-inner container">
+    <div class="countdown-hero">
+      <h2>عداد الامتحانات</h2>
+      
+    </div>
+
+    <div class="countdown" id="countdown">
+      <div class="time-box">
+        <div class="time-num" id="days">0</div>
+        <div class="time-label">أيام</div>
+      </div>
+      <div class="time-box">
+        <div class="time-num" id="hours">00</div>
+        <div class="time-label">ساعات</div>
+      </div>
+      <div class="time-box">
+        <div class="time-num" id="minutes">00</div>
+        <div class="time-label">دقائق</div>
+      </div>
+      <div class="time-box">
+        <div class="time-num" id="seconds">00</div>
+        <div class="time-label">ثواني</div>
+      </div>
+    </div>
+
+    <p class="countdown-note">الموعد النهائي: <strong id="target-text"></strong></p>
+  </div>
+</section>
 
     <!-- المواد -->
     <!-- <h2 class="h2-subjects">المواد الدراسية 📚</h2>
@@ -439,6 +470,32 @@
         <p class="p-channels">الشيخ علاء حامد</p>
       </a>
     </section>
+    <!-- Important Links Section -->
+<section class="important-links" id="links">
+  <h2>روابط مهمة</h2>
+  <div class="links-container">
+    <a href="https://www.facebook.com/share/15wychodEY/" target="_blank" class="link-box">
+      <span>🌐</span>
+      <p> صفحة الكلية على الفيسبوك</p>
+    </a>
+    <a href="https://chat.whatsapp.com/KikXcb8x6XF1IKVRtVpNOR" target="_blank" class="link-box">
+      <span>💬</span>
+      <p> جروب واتساب <br/> Commerce News Hub</p>
+    </a>
+    <a href="https://chat.whatsapp.com/Gm3u6YyAM7z02Y7qQ0AEIA" target="_blank" class="link-box">
+      <span>💬</span>
+      <p> جروب واتساب <br/> Commerce Leaders Community</p>
+    </a>
+    <a href="https://credit.usc.edu.eg/static/index.html" target="_blank" class="link-box">
+      <span>📂</span>
+      <p> ابن الهيثم</p>
+    </a>
+    <a href="https://www.youtube.com/@commerce.sadatcity" target="_blank" class="link-box">
+      <span>▶️</span>
+      <p>قناة الكلية يوتيوب</p>
+    </a>
+  </div>
+</section>
     <section class="courses" id="courses">
       <h2 class="h2-course">كورساتك</h2>
       <h2 class="vedio-address">محتار أتعلم أيه؟ | التعلم في زمن التشتت</h2>
@@ -478,47 +535,74 @@
     <footer>
       <p>© 2025 جميع الحقوق محفوظة | Developed by Abdalhakim</p>
     </footer>
+    
     <script>
-      /* كلمة المرور */
-      //   (function () {
-      //     const CORRECT = "12122005"; // ← غيرها للكلمة اللي انت عايزها
-      //     const gate = document.getElementById("gate");
-      //     const site = document.getElementById("site");
-      //     const input = document.getElementById("pw");
-      //     const btn = document.getElementById("submit");
-      //     const msg = document.getElementById("msg");
+      // countdown.js
+// ضع هنا التاريخ النهائي (سنة-شهر-يوم ساعة:دقيقة:ثانية) بتوقيت محلي أو UTC.
+// مثال: امتحان 30 مايو 2025 الساعة 09:00 صباحًا
+const targetDate = new Date("Dec 20, 2025 10:00:00"); // غيّره لتاريخك
 
-      //     function unlock() {
-      //       const v = input.value;
-      //       if (!v) {
-      //         msg.textContent = "اكتب كلمة المرور";
-      //         return;
-      //       }
-      //       if (v === CORRECT) {
-      //         gate.style.display = "none";
-      //         site.removeAttribute("aria-hidden");
-      //         try {
-      //           sessionStorage.setItem("site-unlocked", "1");
-      //         } catch (e) {}
-      //       } else {
-      //         msg.textContent = "كلمة المرور خاطئة";
-      //         input.value = "";
-      //       }
-      //     }
+// عناصر DOM
+const elDays = document.getElementById('days');
+const elHours = document.getElementById('hours');
+const elMinutes = document.getElementById('minutes');
+const elSeconds = document.getElementById('seconds');
+const targetText = document.getElementById('target-text');
 
-      //     btn.addEventListener("click", unlock);
-      //     input.addEventListener("keydown", function (e) {
-      //       if (e.key === "Enter") unlock();
-      //     });
+// عرض التاريخ المقروء للمستخدم
+if (targetText) {
+  targetText.textContent = targetDate.toLocaleString('ar-EG', {
+    weekday: 'short', year: 'numeric', month: 'long', day: 'numeric',
+    hour: '2-digit', minute: '2-digit'
+  });
+}
 
-      //     try {
-      //       if (sessionStorage.getItem("site-unlocked") === "1") {
-      //         gate.style.display = "none";
-      //         site.removeAttribute("aria-hidden");
-      //       }
-      //     } catch (e) {}
-      //   })();
-      //
+// دالة لتحديث الوقت المتبقي
+function updateCountdown() {
+  const now = new Date();
+  let diff = targetDate - now; // بالميلي ثانية
+
+  if (diff <= 0) {
+    // انتهى العداد
+    elDays.textContent = 0;
+    elHours.textContent = "00";
+    elMinutes.textContent = "00";
+    elSeconds.textContent = "00";
+    clearInterval(timerInterval);
+    // ممكن تضيف هنا رسالة انتهاء أو تبديل القسم
+    return;
+  }
+
+  const seconds = Math.floor((diff / 1000) % 60);
+  const minutes = Math.floor((diff / (1000 * 60)) % 60);
+  const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+  const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+
+  // عرض القيم مع تنسيق
+  setNumber(elDays, days);
+  setNumber(elHours, pad(hours));
+  setNumber(elMinutes, pad(minutes));
+  setNumber(elSeconds, pad(seconds));
+}
+
+// تنسيق رقم لعرض "00"
+function pad(n){ return n < 10 ? '0' + n : String(n); }
+
+// لتطبيق أنيميشن صغير لما الرقم يتغير
+function setNumber(el, val){
+  if(!el) return;
+  if(el.textContent !== String(val)){
+    el.textContent = val;
+    el.classList.remove('animated');
+    // force reflow لإعادة تشغيل الأنميشن
+    void el.offsetWidth;
+    el.classList.add('animated');
+  }
+}
+
+// ابدأ التحديث
+updateCountdown();
+const timerInterval = setInterval(updateCountdown, 1000);
     </script>
   </body>
 </html>
