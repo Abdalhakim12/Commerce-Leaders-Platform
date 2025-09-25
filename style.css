@@ -77,6 +77,101 @@ h1 {
   padding-left: 8px;
   animation: typing 5s steps(46, end) infinite, 1s step-end infinite;
 }
+nav {
+  margin-right: 60px;
+}
+/* Toggle Component */
+.toggle {
+  display: flex; /* ✅ */
+  gap: 1rem; /* ✅ */
+  margin-right: auto; /* ✅ */
+}
+
+.toggle__title {
+  font-weight: bold; /* ✅ */
+  font-size: 18px; /* ✅ */
+}
+
+.toggle__label {
+  display: block; /* ✅ */
+  position: relative; /* ✅ */
+  background-color: black; /* ✅ */
+  padding: 0.3rem 0.4rem; /* ✅ */
+  border-radius: 1.5rem; /* ✅ */
+  width: 4.5rem; /* ✅ */
+  height: 2.2rem; /* ✅ */
+  cursor: pointer; /* ✅ */
+  transition: background-color 0.3s; /* ✅ */
+}
+
+.toggle__label::after {
+  content: ""; /* ✅ */
+  width: 1.6rem; /* ✅ */
+  height: 1.6rem; /* ✅ */
+  border-radius: 50%; /* ✅ */
+  display: block; /* ✅ */
+  background-color: white; /* ✅ */
+  transition: 0.3s; /* ✅ */
+  direction: rtl;
+}
+
+.toggle__checkbox {
+  display: none; /* ✅ */
+}
+
+.toggle__checkbox:checked + .toggle__label {
+  background: white; /* ✅ */
+}
+
+.toggle__checkbox:checked + .toggle__label::after {
+  transform: translateX(-2.1rem); /* ✅ */
+  background: green; /* ✅ */
+}
+html:has(.toggle__checkbox:checked) {
+  body {
+    background: black;
+  }
+  .hero {
+    background: #1e1e1e;
+  }
+  .news-ticker {
+    background: #1e1e1e;
+  }
+  .tips {
+    background: #1e1e1e;
+  }
+  .tips p {
+    color: white;
+  }
+  .countdown-section {
+    background: #1e1e1e;
+  }
+  .exams {
+    background: #1e1e1e;
+  }
+  .exams p {
+    color: white;
+  }
+  p {
+    color: #cccccc;
+  }
+  .box-shadow {
+    color: rgba(255, 255, 255, 0.1);
+  }
+  .table {
+    background: #1e1e1e;
+    color: white;
+  }
+  h1 h2 h3 h4 h5 h6 {
+    color: #ffffff;
+  }
+  .important-links {
+    background: #1e1e1e;
+  }
+  .links-container {
+    background-color: #1e1e1e;
+  }
+}
 
 @keyframes typing {
   0% {
@@ -504,6 +599,7 @@ footer {
   color: #fff;
   text-align: center;
   padding: 20px;
+  font-size: 28px;
 }
 .coming-soon {
   font-size: 2rem;
@@ -701,8 +797,14 @@ body {
   .declare {
     display: none;
   }
-  header {
+  /* header {
     display: none;
+  } */
+  nav {
+    display: none;
+  }
+  .logo {
+    margin-right: 60px;
   }
   .hero {
     height: 20px;
@@ -742,7 +844,12 @@ body {
   .schedule h2 {
     margin-right: 120px;
   }
-
+  .tips p {
+    font-size: 12px;
+  }
+  .tips h2 {
+    font-size: 30px;
+  }
   .vedio-address {
     font-size: 20px;
   }
@@ -753,9 +860,15 @@ body {
   .video-container {
     overflow: hidden;
   }
+  footer p {
+    font-size: 13px;
+  }
 }
 @media (max-width: 430px) and (min-width: 425px) {
   h1 {
+    display: none;
+  }
+  header {
     display: none;
   }
   .gif {
@@ -784,5 +897,8 @@ body {
   }
   .channels {
     grid-template-columns: repeat(2, 1fr);
+  }
+  footer p {
+    font-size: 26px;
   }
 }
