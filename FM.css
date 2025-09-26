@@ -67,9 +67,28 @@ body {
   color: #0c4da2;
 }
 main h1 {
-  font-size: 140px;
-  display: flex;
-  justify-content: center;
+  display: inline-block;
+  font-size: 130px;
+  font-weight: 700;
+  overflow: hidden;
+  direction: rtl;
+  border-left: 3px solid black;
+  animation: typing 5s steps(6, end) infinite, 1s step-end infinite;
+  margin-right: 270px;
+}
+@keyframes typing {
+  0% {
+    width: 0ch;
+  }
+  40% {
+    width: 2ch;
+  }
+  60% {
+    width: 4ch;
+  }
+  100% {
+    width: 0ch;
+  }
 }
 
 footer {
