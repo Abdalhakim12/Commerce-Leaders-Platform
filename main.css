@@ -93,3 +93,16 @@ footer {
   padding: 20px;
   font-size: 20px;
 }
+@media (max-width: 425px) {
+  .subjects {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+/* للتابلت (من 601px لحد 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .subjects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
