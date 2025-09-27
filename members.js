@@ -1,6 +1,6 @@
 // === إعدادات ===
-const CORRECT_PASSWORD = "Unknow00"; // ← غيّر كلمة السر
-const TARGET_PAGE = "index.html"; // ← غيّر صفحة الوجهة
+const CORRECT_PASSWORD = "unknown00"; // ← غيّر كلمة السر
+const TARGET_PAGE = "main.html"; // ← غيّر صفحة الوجهة
 
 // === عناصر DOM ===
 const pwInput = document.getElementById("pw");
