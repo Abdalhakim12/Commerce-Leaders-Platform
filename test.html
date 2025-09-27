@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>دخول الأعضاء</title>
+    <link rel="stylesheet" href="test.css" />
+  </head>
+  <body>
+    <div class="card">
+      <h2>
+        هذه الصفحة مخصصة فقط للأعضاء المصرح لهم 🔐 يمكنك من هنا تحميل الماتريال
+        الخاصة بالدراسة
+      </h2>
+
+      <label for="pw">كلمة المرور</label>
+      <input
+        id="pw"
+        type="password"
+        placeholder="اكتب كلمة المرور هنا"
+        autocomplete="off"
+      />
+
+      <button id="submitBtn" type="button">دخول</button>
+
+      <div id="msg" class="msg" aria-live="polite"></div>
+    </div>
+
+    <!-- ربط بالجافاسكربت -->
+    <script src="members.js"></script>
+  </body>
+</html>

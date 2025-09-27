@@ -1,0 +1,92 @@
+/* Reset بسيط */
+body,
+h2,
+p,
+input,
+button {
+  margin: 0;
+  padding: 0;
+  font-family: "Cairo", sans-serif;
+}
+
+/* خلفية */
+body {
+  padding: 30px;
+  direction: rtl;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* الكارد */
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 40px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.6);
+  max-width: 600px;
+  margin: auto;
+  animation: fadeIn 1.5s ease-in-out;
+  text-align: center;
+}
+
+/* العناوين */
+.card h2 {
+  margin-bottom: 15px;
+  font-size: 26px;
+  color: #00d4ff;
+}
+
+/* اللابل */
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+/* المدخل */
+input[type="password"] {
+  width: 90%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+}
+
+/* الزر */
+button {
+  margin-top: 12px;
+  width: 30%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 0;
+  background: #00c896;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  font-size: 20px;
+}
+
+button:hover {
+  background: #00a97a;
+}
+
+/* الرسائل */
+.msg {
+  margin-top: 10px;
+  min-height: 20px;
+  font-weight: 700;
+}
+
+.msg.error {
+  color: #e02424;
+}
+
+.msg.ok {
+  color: #16a34a;
+}
