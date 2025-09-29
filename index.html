@@ -6,19 +6,21 @@
     <title>Commerce Leaders</title>
     <link rel="stylesheet" href="style.css" />
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-JWVV1SN6XY"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-JWVV1SN6XY"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag('config', 'G-JWVV1SN6XY');
-</script>
-
-   
+      gtag("config", "G-JWVV1SN6XY");
+    </script>
   </head>
   <body>
-  
     <video class="video-loop" autoplay loop muted>
       <source src="vedio-back.mp4" type="video/mp4" />
     </video>
@@ -26,18 +28,17 @@
     <header>
       <div class="logo">Commerce Leaders</div>
       <nav>
-        <a href="home.html">الرئيسية</a>
+        <a href="index.html">الرئيسية</a>
         <a href="#subjects">الملخصات</a>
         <a href="#exams">امتحانات سابقة</a>
-        <a href="#schedule">جدول المحاضرات</a>
+        <a href="sch.html">جدول المحاضرات</a>
         <a href="#channels"> قنوات يوتيوب</a>
         <a href="#courses">كورساتك</a>
         <a href="#tips">الحديث الأسبوعى</a>
         <a href="contact.html">تواصل معى</a>
-
       </nav>
 
-       <!-- <div class="toggle">
+      <!-- <div class="toggle">
           <h3 class="toggle__title">دارك مود</h3>
           <input id="toggle" class="toggle__checkbox" type="checkbox" />
           <label class="toggle__label" for="toggle"></label>
@@ -49,17 +50,23 @@
       <h1>كل ما تحتاجه في سنة تالتة تجارة إنجليزي... في مكان واحد</h1>
       <p>الفرقة الثالثة | شعبة اللغة</p>
     </section>
-    
+    <section class="palestine-simple">
+      <h2>اللهم انصر أهلنا في فلسطين</h2>
+      <p>وما النصر إلا من عند الله</p>
+    </section>
+
     <!-- قسم الأخبار -->
     <div class="news-ticker">
       <div class="news-track">
+        <span>
           📢 دكتور شريف هيمشى بنظام اننا هنعمل بريزينتيشن على الجزء الى لسه
           هيتشرح</span
         >
         <span>📢 فاينل الاحصاء كله مقالى </span>
+        <span>بوت التليجرام متوفر عليه الفصل الأول من كل مادة 📢</span>
       </div>
     </div>
-      <!-- حديث -->
+    <!-- حديث -->
     <section id="tips" class="tips">
       <h2>الحديث الأسبوعى</h2>
       <p>
@@ -68,68 +75,37 @@
       </p>
     </section>
     <!-- countdown.html snippet -->
-<section class="countdown-section" aria-label="عداد العد التنازلي">
-  <div class="countdown-inner container">
-    <div class="countdown-hero">
-      <h2>عداد الامتحانات</h2>
-      
-    </div>
+    <section class="countdown-section" aria-label="عداد العد التنازلي">
+      <div class="countdown-inner container">
+        <div class="countdown-hero">
+          <h2>عداد الامتحانات</h2>
+        </div>
 
-    <div class="countdown" id="countdown">
-      <div class="time-box">
-        <div class="time-num" id="days">0</div>
-        <div class="time-label">أيام</div>
-      </div>
-      <div class="time-box">
-        <div class="time-num" id="hours">00</div>
-        <div class="time-label">ساعات</div>
-      </div>
-      <div class="time-box">
-        <div class="time-num" id="minutes">00</div>
-        <div class="time-label">دقائق</div>
-      </div>
-      <div class="time-box">
-        <div class="time-num" id="seconds">00</div>
-        <div class="time-label">ثواني</div>
-      </div>
-    </div>
+        <div class="countdown" id="countdown">
+          <div class="time-box">
+            <div class="time-num" id="days">0</div>
+            <div class="time-label">أيام</div>
+          </div>
+          <div class="time-box">
+            <div class="time-num" id="hours">00</div>
+            <div class="time-label">ساعات</div>
+          </div>
+          <div class="time-box">
+            <div class="time-num" id="minutes">00</div>
+            <div class="time-label">دقائق</div>
+          </div>
+          <div class="time-box">
+            <div class="time-num" id="seconds">00</div>
+            <div class="time-label">ثواني</div>
+          </div>
+        </div>
 
-    <p class="countdown-note">الموعد النهائي: <strong id="target-text"></strong></p>
-  </div>
-</section>
+        <p class="countdown-note">
+          الموعد النهائي: <strong id="target-text"></strong>
+        </p>
+      </div>
+    </section>
 
-    <!-- المواد -->
-    <!-- <h2 class="h2-subjects">المواد الدراسية 📚</h2>
-    <main class="subjects" id="subjects">
-      <div class="circle">
-        <span> اقتصاد صناعى</span>
-        <a href="اقتصاد صناعى.html">دخول</a>
-      </div>
-      <div class="circle">
-        <span>محاسبة ضريبيبة</span>
-        <a href="tax.html">دخول</a>
-      </div>
-      <div class="circle">
-        <span> تحليل التقارير <br />والمخاطر المالية</span>
-        <a href="تحليل.html">دخول</a>
-      </div>
-      <div class="circle">
-        <span>إحصاء الاستدلالي</span>
-        <a href="احصاء.html">دخول</a>
-      </div>
-      <div class="circle">
-        <span> محاسبة تكاليف 2</span>
-        <a href="تكاليف.html">دخول</a>
-      </div>
-      <div class="circle">
-        <span> اقتصاديات النقود و البنوك</span>
-        <a href="Money.html">دخول</a>
-      </div>
-      <div class="circle">
-        <span> أساسيات الإدارة المالية</span>
-        <a href="FM.html">دخول</a>
-      </div>
-    </main> -->
     <h2 class="h2-subjects">ملخصات المواد 📚</h2>
     <main class="subjects" id="subjects">
       <div class="circle">
@@ -167,223 +143,6 @@
       <h2>📝 امتحانات سابقة</h2>
       <p>هنا هتلاقي أسئلة السنين السابقة لكل مادة:</p>
       <img src="تصميم بدون عنوان.gif" class="gif" />
-    </section>
-
-    <!-- الجدول -->
-    <section id="schedule" class="schedule">
-      <h2>📅 جدول المحاضرات</h2>
-      <table class="table">
-        <thead>
-          <tr>
-            <th>اليوم</th>
-            <th>المجموعات</th>
-            <th>المكان</th>
-            <th>المحاضرة الأولى</th>
-            <th>المحاضرة الثانية</th>
-            <th>المحاضرة الثالثة</th>
-          </tr>
-        </thead>
-        <tbody>
-          <!-- السبت -->
-          <tr>
-            <td class="day" rowspan="4">السبت</td>
-            <td>مجموعة (1)</td>
-            <td class="room">قاعة (7)</td>
-            <td>
-              تحليل التقارير والمخاطر المالية<br /><span class="note"
-                >د/ إسماعيل فرج - د/ أكرم سامي</span
-              >
-            </td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>مجموعة (2)</td>
-            <td class="room">قاعة (12)</td>
-            <td></td>
-
-            <td>
-              أساسيات الإدارة المالية<br /><span class="note"
-                >د/ السيد ماهر خلف - د/ منى كشك</span
-              >
-            </td>
-            <td>
-              المحاسبة الضريبية<br /><span class="note"
-                >د/ رجب محمد عمران <br />
-                د/ السيد عوض شبانة</span
-              >
-            </td>
-          </tr>
-          <tr>
-            <td>مجموعة (3)</td>
-            <td class="room">قاعة (13)</td>
-            <td>
-              الإحصاء الاستدلالي<br /><span class="note">د/ محمد حلمي</span>
-            </td>
-            <td>
-              المحاسبة الضريبية<br /><span class="note"
-                >د/ رجب محمد عمران <br />
-                د/ السيد عوض شبانة</span
-              >
-            </td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>مجموعة (4)</td>
-            <td class="room">قاعة (14)</td>
-            <td>
-              أساسيات الإدارة المالية<br /><span class="note"
-                >د/ السيد ماهر - د/ منى شكك</span
-              >
-            </td>
-            <td>
-              الإحصاء الاستدلالي<br /><span class="note">د/ محمد حلمي</span>
-            </td>
-            <td>
-              تحليل التقارير والمخاطر المالية<br /><span class="note"
-                >د/ إسماعيل فرج</span
-              >
-            </td>
-          </tr>
-
-          <!-- الأحد -->
-          <tr>
-            <td class="day" rowspan="4">الأحد</td>
-            <td>مجموعة (1)</td>
-            <td class="room">قاعة (7)</td>
-            <td>
-              المحاسبة الضريبية<br /><span class="note"
-                >د/ رجب محمد عمران <br />
-                د/ السيد عوض شبانة</span
-              >
-            </td>
-            <td>
-              اقتصاديات النقود و البنوك<br /><span class="note"
-                >أ .د/ شريف محمد على</span
-              >
-            </td>
-            <td>
-              اقتصاد صناعى<br /><span class="note"
-                >أ . د محمد صفوت قابل <br />
-                د/ طارق محمد صفوت
-              </span>
-            </td>
-          </tr>
-          <tr>
-            <td>مجموعة (2)</td>
-            <td class="room">قاعة (12)</td>
-            <td>
-              تحليل التقارير والمخاطر المالية<br /><span class="note"
-                >د/ إسماعيل فرج - د/ أكرم سامي</span
-              >
-            </td>
-            <td>
-              محاسبة تكاليف (2)<br /><span class="note">د/ رمضان الميهي</span>
-            </td>
-            <td>
-              اقتصاديات النقود و البنوك<br /><span class="note"
-                >أ .د/ شريف محمد على</span
-              >
-            </td>
-          </tr>
-          <tr>
-            <td>مجموعة (3)</td>
-            <td class="room">قاعة (13)</td>
-            <td>
-              محاسبة تكاليف (2)<br /><span class="note">د/ رمضان الميهي</span>
-            </td>
-            <td>
-              اقتصاد صناعى<br /><span class="note"
-                >أ . د محمد صفوت قابل <br />
-                د/ طارق محمد صفوت
-              </span>
-            </td>
-            <td>
-              تحليل التقارير والمخاطر المالية<br /><span class="note"
-                >د/ إسماعيل فرج - د/ أكرم سامي</span
-              >
-            </td>
-          </tr>
-          <tr>
-            <td>مجموعة (4)</td>
-            <td class="room">قاعة (14)</td>
-            <td></td>
-            <td>
-              المحاسبة الضريبية<br /><span class="note"
-                >د/ رجب محمد عمران <br />
-                د/ السيد عوض شبانة</span
-              >
-            </td>
-            <td></td>
-          </tr>
-
-          <!-- الثلاثاء -->
-          <tr>
-            <td class="day" rowspan="4">الثلاثاء</td>
-            <td>مجموعة (1)</td>
-            <td class="room">قاعة (7)</td>
-            <td>
-              الإحصاء الاستدلالي<br /><span class="note">د/ محمد حلمي</span>
-            </td>
-            <td>
-              محاسبة تكاليف (2)<br /><span class="note">د/ رمضان الميهي</span>
-            </td>
-            <td>
-              أساسيات الإدارة المالية<br /><span class="note"
-                >د/ السيد ماهر - د/ منى شكك</span
-              >
-            </td>
-          </tr>
-          <tr>
-            <td>مجموعة (2)</td>
-            <td class="room">قاعة (12)</td>
-            <td></td>
-
-            <td>
-              اقتصاد صناعى<br /><span class="note"
-                >أ . د محمد صفوت قابل <br />
-                د/ طارق محمد صفوت
-              </span>
-            </td>
-            <td>
-              الإحصاء الاستدلالي<br /><span class="note">د/ محمد حلمي</span>
-            </td>
-          </tr>
-          <tr>
-            <td>مجموعة (3)</td>
-            <td class="room">قاعة (13)</td>
-            <td>
-              أساسيات الإدارة المالية<br /><span class="note"
-                >د/ السيد ماهر - د/ منى شكك</span
-              >
-            </td>
-            <td></td>
-            <td>
-              اقتصاديات النقود و البنوك<br /><span class="note"
-                >أ .د/ شريف محمد على</span
-              >
-            </td>
-          </tr>
-          <tr>
-            <td>مجموعة (4)</td>
-            <td class="room">قاعة (14)</td>
-            <td>
-              اقتصاد صناعى<br /><span class="note"
-                >أ . د محمد صفوت قابل <br />
-                د/ طارق محمد صفوت
-              </span>
-            </td>
-            <td>
-              اقتصاديات النقود و البنوك<br /><span class="note"
-                >أ .د/ شريف محمد على</span
-              >
-            </td>
-            <td>
-              محاسبة تكاليف (2)<br /><span class="note">د/ رمضان الميهي</span>
-            </td>
-          </tr>
-        </tbody>
-      </table>
     </section>
 
     <!--قنوات يوتيوب مهمة-->
@@ -455,31 +214,69 @@
       </a>
     </section>
     <!-- Important Links Section -->
-<section class="important-links" id="links">
-  <h2>روابط مهمة</h2>
-  <div class="links-container">
-    <a href="https://www.facebook.com/share/15wychodEY/" target="_blank" class="link-box">
-      <span>🌐</span>
-      <p> صفحة الكلية على الفيسبوك</p>
-    </a>
-    <a href="https://chat.whatsapp.com/KikXcb8x6XF1IKVRtVpNOR" target="_blank" class="link-box">
-      <span>💬</span>
-      <p> جروب واتساب <br/> Commerce News Hub</p>
-    </a>
-    <a href="https://chat.whatsapp.com/Gm3u6YyAM7z02Y7qQ0AEIA" target="_blank" class="link-box">
-      <span>💬</span>
-      <p> جروب واتساب <br/> Commerce Leaders Community</p>
-    </a>
-    <a href="https://credit.usc.edu.eg/static/index.html" target="_blank" class="link-box">
-      <span>📂</span>
-      <p> ابن الهيثم</p>
-    </a>
-    <a href="https://www.youtube.com/@commerce.sadatcity" target="_blank" class="link-box">
-      <span>▶️</span>
-      <p>قناة الكلية يوتيوب</p>
-    </a>
-  </div>
-</section>
+    <section class="important-links" id="links">
+      <h2>روابط مهمة</h2>
+      <div class="links-container">
+        <a
+          href="https://www.facebook.com/share/15wychodEY/"
+          target="_blank"
+          class="link-box"
+        >
+          <span><img src="icons8-facebook-50.svg" /></span>
+          <p>صفحة الكلية على الفيسبوك</p>
+        </a>
+        <a
+          href="https://chat.whatsapp.com/KikXcb8x6XF1IKVRtVpNOR"
+          target="_blank"
+          class="link-box"
+        >
+          <span><img src="icons8-whatsapp-50.svg" /></span>
+          <p>
+            جروب واتساب <br />
+            Commerce News Hub
+          </p>
+        </a>
+        <a
+          href="https://chat.whatsapp.com/Gm3u6YyAM7z02Y7qQ0AEIA"
+          target="_blank"
+          class="link-box"
+        >
+          <span><img src="icons8-whatsapp-50.svg" /></span>
+          <p>
+            جروب واتساب <br />
+            Commerce Leaders Community
+          </p>
+        </a>
+        <a
+          href="https://credit.usc.edu.eg/static/index.html"
+          target="_blank"
+          class="link-box"
+        >
+          <span>⚙</span>
+          <p>ابن الهيثم</p>
+        </a>
+        <a
+          href="https://www.youtube.com/@commerce.sadatcity"
+          target="_blank"
+          class="link-box"
+        >
+          <span><img src="icons8-youtube-50.svg" /></span>
+          <p>قناة الكلية يوتيوب</p>
+        </a>
+        <a href="https://books.sadat.online/" target="_blank" class="link-box">
+          <span>📂</span>
+          <p>منصة الكتب</p>
+        </a>
+        <a
+          href="https://t.me/Commerce2_Leaders2_Bot"
+          target="_blank"
+          class="link-box"
+        >
+          <span><img src="icons8-telegram-app-50.svg" /></span>
+          <p>بوت التليجرام</p>
+        </a>
+      </div>
+    </section>
     <section class="courses" id="courses">
       <h2 class="h2-course">كورساتك</h2>
       <h2 class="vedio-address">محتار أتعلم أيه؟ | التعلم في زمن التشتت</h2>
@@ -506,86 +303,92 @@
       </div>
     </section>
 
-   <!-- Section في الصفحة الرئيسية -->
-<section class="secret-materials">
-  <div class="overlay">
-    <h2>📚 قسم خاص </h2>
-    <a href="test.html" class="btn-secret">ادخل الآن</a>
-  </div>
-</section>
+    <!-- Section في الصفحة الرئيسية -->
+    <section class="secret-materials">
+      <div class="overlay">
+        <h2>📚 قسم خاص</h2>
+        <a href="test.html" class="btn-secret">ادخل الآن</a>
+      </div>
+    </section>
 
     <!-- الفوتر -->
     <footer>
       <p>© 2025 جميع الحقوق محفوظة | Developed by Abdalhakim</p>
     </footer>
-    
+
     <script>
       // countdown.js
-// ضع هنا التاريخ النهائي (سنة-شهر-يوم ساعة:دقيقة:ثانية) بتوقيت محلي أو UTC.
-// مثال: امتحان 30 مايو 2025 الساعة 09:00 صباحًا
-const targetDate = new Date("Dec 20, 2025 10:00:00"); // غيّره لتاريخك
+      // ضع هنا التاريخ النهائي (سنة-شهر-يوم ساعة:دقيقة:ثانية) بتوقيت محلي أو UTC.
+      // مثال: امتحان 30 مايو 2025 الساعة 09:00 صباحًا
+      const targetDate = new Date("Dec 20, 2025 10:00:00"); // غيّره لتاريخك
 
-// عناصر DOM
-const elDays = document.getElementById('days');
-const elHours = document.getElementById('hours');
-const elMinutes = document.getElementById('minutes');
-const elSeconds = document.getElementById('seconds');
-const targetText = document.getElementById('target-text');
+      // عناصر DOM
+      const elDays = document.getElementById("days");
+      const elHours = document.getElementById("hours");
+      const elMinutes = document.getElementById("minutes");
+      const elSeconds = document.getElementById("seconds");
+      const targetText = document.getElementById("target-text");
 
-// عرض التاريخ المقروء للمستخدم
-if (targetText) {
-  targetText.textContent = targetDate.toLocaleString('ar-EG', {
-    weekday: 'short', year: 'numeric', month: 'long', day: 'numeric',
-    hour: '2-digit', minute: '2-digit'
-  });
-}
+      // عرض التاريخ المقروء للمستخدم
+      if (targetText) {
+        targetText.textContent = targetDate.toLocaleString("ar-EG", {
+          weekday: "short",
+          year: "numeric",
+          month: "long",
+          day: "numeric",
+          hour: "2-digit",
+          minute: "2-digit",
+        });
+      }
 
-// دالة لتحديث الوقت المتبقي
-function updateCountdown() {
-  const now = new Date();
-  let diff = targetDate - now; // بالميلي ثانية
+      // دالة لتحديث الوقت المتبقي
+      function updateCountdown() {
+        const now = new Date();
+        let diff = targetDate - now; // بالميلي ثانية
 
-  if (diff <= 0) {
-    // انتهى العداد
-    elDays.textContent = 0;
-    elHours.textContent = "00";
-    elMinutes.textContent = "00";
-    elSeconds.textContent = "00";
-    clearInterval(timerInterval);
-    // ممكن تضيف هنا رسالة انتهاء أو تبديل القسم
-    return;
-  }
+        if (diff <= 0) {
+          // انتهى العداد
+          elDays.textContent = 0;
+          elHours.textContent = "00";
+          elMinutes.textContent = "00";
+          elSeconds.textContent = "00";
+          clearInterval(timerInterval);
+          // ممكن تضيف هنا رسالة انتهاء أو تبديل القسم
+          return;
+        }
 
-  const seconds = Math.floor((diff / 1000) % 60);
-  const minutes = Math.floor((diff / (1000 * 60)) % 60);
-  const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
-  const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+        const seconds = Math.floor((diff / 1000) % 60);
+        const minutes = Math.floor((diff / (1000 * 60)) % 60);
+        const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
 
-  // عرض القيم مع تنسيق
-  setNumber(elDays, days);
-  setNumber(elHours, pad(hours));
-  setNumber(elMinutes, pad(minutes));
-  setNumber(elSeconds, pad(seconds));
-}
+        // عرض القيم مع تنسيق
+        setNumber(elDays, days);
+        setNumber(elHours, pad(hours));
+        setNumber(elMinutes, pad(minutes));
+        setNumber(elSeconds, pad(seconds));
+      }
 
-// تنسيق رقم لعرض "00"
-function pad(n){ return n < 10 ? '0' + n : String(n); }
+      // تنسيق رقم لعرض "00"
+      function pad(n) {
+        return n < 10 ? "0" + n : String(n);
+      }
 
-// لتطبيق أنيميشن صغير لما الرقم يتغير
-function setNumber(el, val){
-  if(!el) return;
-  if(el.textContent !== String(val)){
-    el.textContent = val;
-    el.classList.remove('animated');
-    // force reflow لإعادة تشغيل الأنميشن
-    void el.offsetWidth;
-    el.classList.add('animated');
-  }
-}
+      // لتطبيق أنيميشن صغير لما الرقم يتغير
+      function setNumber(el, val) {
+        if (!el) return;
+        if (el.textContent !== String(val)) {
+          el.textContent = val;
+          el.classList.remove("animated");
+          // force reflow لإعادة تشغيل الأنميشن
+          void el.offsetWidth;
+          el.classList.add("animated");
+        }
+      }
 
-// ابدأ التحديث
-updateCountdown();
-const timerInterval = setInterval(updateCountdown, 1000);
+      // ابدأ التحديث
+      updateCountdown();
+      const timerInterval = setInterval(updateCountdown, 1000);
     </script>
   </body>
 </html>
