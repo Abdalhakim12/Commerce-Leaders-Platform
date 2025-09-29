@@ -282,7 +282,7 @@ body {
 }
 
 .news-ticker {
-  background: #f1f1f1;
+  background: #004aad;
   overflow: hidden;
   white-space: nowrap;
   border: 2px solid #ccc;
@@ -300,7 +300,7 @@ body {
 .news-track span {
   margin: 0 50px;
   font-size: 18px;
-  color: #333;
+  color: white;
   font-weight: bold;
 }
 
@@ -859,8 +859,8 @@ body {
     margin-bottom: 10px;
   }
   .palestine-simple {
-    width: 400px;
-    height: 160px;
+    width: 300px;
+    height: 180px;
   }
 
   .news-track {
@@ -868,62 +868,7 @@ body {
     padding-left: 100%;
     animation: ticker 50s linear infinite;
   }
-}
-.news-title {
-  display: none;
-}
-.gif {
-  display: none;
-}
-.channels {
-  grid-template-columns: repeat(1, 1fr);
-}
-.schedule {
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch; /* علشان يبقى سهل في الموبايل */
-}
-.secret-materials {
-  width: 350px;
-}
-
-.schedule table {
-  width: 100%;
-  border-collapse: collapse;
-}
-.schedule h2 {
-  margin-right: 120px;
-}
-.tips p {
-  font-size: 18px;
-}
-.tips h2 {
-  font-size: 30px;
-}
-.vedio-address {
-  font-size: 20px;
-}
-.video-walled {
-  height: 300px;
-  width: 400px;
-}
-.video-container {
-  overflow: hidden;
-}
-footer p {
-  font-size: 13px;
-}
-@media (max-width: 430px) and (min-width: 425px) {
-  h1 {
-    display: none;
-  }
-  /* header {
-    display: none;
-  } */
-  .logo {
-    font-size: 48px;
-    padding-right: 60px;
-  }
-  nav {
+  .news-title {
     display: none;
   }
   .gif {
@@ -936,24 +881,79 @@ footer p {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch; /* علشان يبقى سهل في الموبايل */
   }
-  .links-container {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
+  .secret-materials {
+    width: 350px;
+  }
+
+  .schedule table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .schedule h2 {
+    margin-right: 120px;
+  }
+  .tips p {
+    font-size: 18px;
+  }
+  .tips h2 {
+    font-size: 30px;
   }
   .vedio-address {
-    font-size: 22px;
+    font-size: 20px;
   }
-}
-/* للتابلت (من 601px لحد 1024px) */
-@media (min-width: 601px) and (max-width: 1024px) {
-  .hero h1 {
-    font-size: 1.5rem;
-    margin-bottom: 15px;
+  .video-walled {
+    height: 300px;
+    width: 400px;
   }
-  .channels {
-    grid-template-columns: repeat(2, 1fr);
+  .video-container {
+    overflow: hidden;
   }
   footer p {
-    font-size: 26px;
+    font-size: 13px;
+  }
+  @media (max-width: 430px) and (min-width: 425px) {
+    h1 {
+      display: none;
+    }
+    /* header {
+    display: none;
+  } */
+    .logo {
+      font-size: 48px;
+      padding-right: 60px;
+    }
+    nav {
+      display: none;
+    }
+    .gif {
+      display: none;
+    }
+    .channels {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .schedule {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch; /* علشان يبقى سهل في الموبايل */
+    }
+    .links-container {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .vedio-address {
+      font-size: 22px;
+    }
+  }
+  /* للتابلت (من 601px لحد 1024px) */
+  @media (min-width: 601px) and (max-width: 1024px) {
+    .hero h1 {
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+    }
+    .channels {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    footer p {
+      font-size: 26px;
+    }
   }
 }
