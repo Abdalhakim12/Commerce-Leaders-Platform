@@ -842,11 +842,19 @@ body {
 }
 
 @media (max-width: 425px) {
+  header {
+    display: flex;
+    padding: 0%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
   nav {
     margin-right: 50px;
+    font-weight: bold;
   }
   nav a {
     font-size: 12px;
+    font-weight: bold;
   }
   nav a:hover {
     color: #111;
