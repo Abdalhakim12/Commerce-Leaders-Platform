@@ -437,6 +437,17 @@ body {
   grid-template-columns: repeat(4, 1fr);
   row-gap: 50px;
   margin-bottom: 40px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch; /* علشان يبقى سهل في الموبايل */
+}
+.p-channels-4 {
+  margin-right: 125px;
+}
+.p-channels-5 {
+  margin-right: 145px;
+}
+.p-channels-10 {
+  margin-right: 125px;
 }
 
 .channels img {
@@ -459,8 +470,9 @@ body {
   color: #00c896;
 }
 a p {
-  margin-right: 120px;
+  margin-right: 100px;
   margin-top: 20px;
+  font-size: 22px;
 }
 .img-channel:hover {
   transform: scale(1.06);
@@ -914,23 +926,40 @@ body {
     display: none;
   }
   .channels {
-    grid-template-columns: repeat(1, 1fr);
-  }
-  .schedule {
+    display: flex;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch; /* علشان يبقى سهل في الموبايل */
+    margin-right: 17px;
+    padding-left: 30px;
+    padding-top: 20px;
   }
+  .p-channels-1 {
+    margin-right: 25px;
+  }
+
+  .channels p {
+    font-size: 20px;
+    margin-right: 25px;
+  }
+  .p-channels-2 {
+    margin-left: -25px;
+    margin-top: 10px;
+  }
+  .p-channels-4 {
+    margin-left: 40px;
+    margin-right: 500px;
+  }
+  .p-channels-5 {
+    margin-right: 58px;
+  }
+  .p-channels-10 {
+    margin-right: -200px;
+  }
+
   .secret-materials {
     width: 290px;
   }
 
-  .schedule table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-  .schedule h2 {
-    margin-right: 120px;
-  }
   .tips p {
     font-size: 18px;
   }
