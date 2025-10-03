@@ -984,10 +984,37 @@ body {
   h1 {
     display: none;
   }
-  /* header {
-    display: none;
-  } */
+  .channels {
+    display: flex;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; /* علشان يبقى سهل في الموبايل */
+    margin-right: 17px;
+    padding-left: 30px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+  .p-channels-1 {
+    margin-right: 25px;
+  }
 
+  .channels p {
+    font-size: 20px;
+    margin-right: 25px;
+  }
+  .p-channels-2 {
+    margin-left: -25px;
+    margin-top: 10px;
+  }
+  .p-channels-4 {
+    margin-left: 40px;
+    margin-right: 500px;
+  }
+  .p-channels-5 {
+    margin-right: 58px;
+  }
+  .p-channels-10 {
+    margin-right: 4000px;
+  }
   .palestine-simple h2 {
     font-size: 1.5rem;
     color: #00ff88; /* أخضر بسيط */
