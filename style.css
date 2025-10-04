@@ -54,10 +54,6 @@ header nav a {
   font-weight: 500;
 }
 
-header nav a:hover {
-  font-size: 16px;
-}
-
 /* الهيرو */
 .hero {
   background: linear-gradient(135deg, #004aad, #00c896);
@@ -180,8 +176,10 @@ html:has(.toggle__checkbox:checked) {
   .links-container {
     background-color: #1e1e1e;
   }
+  .links-container a {
+    background-color: #1e1e1e;
+  }
 }
-
 @keyframes typing {
   0% {
     width: 0ch;
@@ -863,6 +861,83 @@ body {
     padding-top: 20px;
     padding-bottom: 20px;
   }
+  .toggle {
+    margin-right: 70px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+    height: 90px;
+    width: 280px;
+    border-radius: 20px;
+    text-align: center;
+  }
+  .toggle__title {
+    margin-top: 25px;
+    margin-right: 45px;
+  }
+  .toggle__label {
+    margin-top: 25px;
+  }
+  html:has(.toggle__checkbox:checked) {
+    body {
+      background: black;
+    }
+    .video-loop {
+      display: none;
+    }
+    .hero {
+      background: #1e1e1e;
+    }
+    .news-ticker {
+      background: #1e1e1e;
+    }
+    .tips {
+      background: #1e1e1e;
+    }
+    .tips p {
+      color: white;
+    }
+    .countdown-section {
+      background: #1e1e1e;
+    }
+    .exams {
+      background: #1e1e1e;
+    }
+    .exams p {
+      color: white;
+    }
+    p {
+      color: #cccccc;
+    }
+    .box-shadow {
+      color: rgba(255, 255, 255, 0.1);
+    }
+    .table {
+      background: #1e1e1e;
+      color: white;
+    }
+    h1 h2 h3 h4 h5 h6 {
+      color: #ffffff;
+    }
+    .important-links {
+      background: #1e1e1e;
+    }
+    .links-container {
+      background-color: #1e1e1e;
+    }
+    .links-container a {
+      background-color: #1e1e1e;
+    }
+    .toggle {
+      background-color: #1e1e1e;
+    }
+    .toggle__title {
+      color: white;
+    }
+    .active {
+      padding-top: 290px;
+    }
+  }
   nav {
     margin-right: 50px;
     font-weight: bold;
@@ -1009,6 +1084,83 @@ body {
   h1 {
     display: none;
   }
+  .toggle {
+    margin-right: 70px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+    height: 90px;
+    width: 280px;
+    border-radius: 20px;
+    text-align: center;
+  }
+  .toggle__title {
+    margin-top: 25px;
+    margin-right: 45px;
+  }
+  .toggle__label {
+    margin-top: 25px;
+  }
+  html:has(.toggle__checkbox:checked) {
+    body {
+      background: black;
+    }
+    .video-loop {
+      display: none;
+    }
+    .hero {
+      background: #1e1e1e;
+    }
+    .news-ticker {
+      background: #1e1e1e;
+    }
+    .tips {
+      background: #1e1e1e;
+    }
+    .tips p {
+      color: white;
+    }
+    .countdown-section {
+      background: #1e1e1e;
+    }
+    .exams {
+      background: #1e1e1e;
+    }
+    .exams p {
+      color: white;
+    }
+    p {
+      color: #cccccc;
+    }
+    .box-shadow {
+      color: rgba(255, 255, 255, 0.1);
+    }
+    .table {
+      background: #1e1e1e;
+      color: white;
+    }
+    h1 h2 h3 h4 h5 h6 {
+      color: #ffffff;
+    }
+    .important-links {
+      background: #1e1e1e;
+    }
+    .links-container {
+      background-color: #1e1e1e;
+    }
+    .links-container a {
+      background-color: #1e1e1e;
+    }
+    .toggle {
+      background-color: #1e1e1e;
+    }
+    .toggle__title {
+      color: white;
+    }
+    .active {
+      padding-top: 290px;
+    }
+  }
   .channels {
     display: flex;
     overflow-x: auto;
@@ -1098,6 +1250,80 @@ body {
   .hero h1 {
     font-size: 1.5rem;
     margin-bottom: 15px;
+  }
+  .toggle {
+    margin-right: 225px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+    height: 90px;
+    width: 280px;
+    border-radius: 20px;
+    text-align: center;
+  }
+  .toggle__title {
+    margin-top: 25px;
+    margin-right: 45px;
+  }
+  .toggle__label {
+    margin-top: 25px;
+  }
+  html:has(.toggle__checkbox:checked) {
+    body {
+      background: black;
+    }
+    .video-loop {
+      display: none;
+    }
+    .hero {
+      background: #1e1e1e;
+    }
+    .news-ticker {
+      background: #1e1e1e;
+    }
+    .tips {
+      background: #1e1e1e;
+    }
+    .tips p {
+      color: white;
+    }
+    .countdown-section {
+      background: #1e1e1e;
+    }
+    .exams {
+      background: #1e1e1e;
+    }
+    .exams p {
+      color: white;
+    }
+    p {
+      color: #cccccc;
+    }
+    .box-shadow {
+      color: rgba(255, 255, 255, 0.1);
+    }
+    .table {
+      background: #1e1e1e;
+      color: white;
+    }
+    h1 h2 h3 h4 h5 h6 {
+      color: #ffffff;
+    }
+    .important-links {
+      background: #1e1e1e;
+    }
+    .links-container {
+      background-color: #1e1e1e;
+    }
+    .links-container a {
+      background-color: #1e1e1e;
+    }
+    .toggle {
+      background-color: #1e1e1e;
+    }
+    .toggle__title {
+      color: white;
+    }
   }
   .exams {
     height: 250px;
