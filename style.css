@@ -396,22 +396,19 @@ body {
   padding: 50px 20px;
   text-align: center;
   background: #fafafa;
+  width: 700px;
+  height: 300px;
+  display: inline-block;
+  margin-right: 430px;
+  border-radius: 20px;
 }
 .gif {
   margin-bottom: -200px;
-  margin-top: -100px;
+  margin-top: -150px;
 }
 .exams h2 {
-  margin-bottom: 20px;
+  margin-top: -30px;
   color: #004aad;
-}
-
-.exams ul {
-  list-style: none;
-}
-
-.exams li {
-  margin: 10px 0;
 }
 
 .exams a {
@@ -920,14 +917,15 @@ body {
     display: none;
   }
   .exams {
-    height: 320px;
+    height: 250px;
+    width: 300px;
+    margin-right: 30px;
   }
   .gif {
-    display: flex;
-    width: 340px;
-    height: 340px;
-    margin-top: -95px;
-    margin-right: -40px;
+    width: 300px;
+    height: 300px;
+    margin-top: -120px;
+    margin-right: -25px;
   }
   .channels {
     display: flex;
@@ -1036,22 +1034,20 @@ body {
     display: none;
   }
   .exams {
-    height: 320px;
+    height: 250px;
+    width: 300px;
+    margin-right: 55px;
   }
   .gif {
-    display: flex;
-    width: 340px;
-    height: 340px;
-    margin-top: -95px;
-    margin-right: 10px;
+    width: 300px;
+    height: 300px;
+    margin-top: -120px;
+    margin-right: -25px;
   }
   .channels {
     grid-template-columns: repeat(1, 1fr);
   }
-  .schedule {
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch; /* علشان يبقى سهل في الموبايل */
-  }
+
   .links-container {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -1066,7 +1062,22 @@ body {
     font-size: 1.5rem;
     margin-bottom: 15px;
   }
+  .exams {
+    height: 250px;
+    width: 500px;
+    margin-right: 140px;
+  }
+  .gif {
+    width: 300px;
+    height: 300px;
+    margin-top: -120px;
+    margin-right: -25px;
+  }
   .channels {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .links-container {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
   footer p {
