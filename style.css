@@ -137,6 +137,9 @@ html:has(.toggle__checkbox:checked) {
   body {
     background: black;
   }
+  .video-loop {
+    display: none;
+  }
   .hero {
     background: #1e1e1e;
   }
@@ -192,10 +195,6 @@ html:has(.toggle__checkbox:checked) {
   100% {
     width: 0ch;
   }
-}
-
-.burger-menu__checkbox {
-  display: none;
 }
 
 .palestine-simple {
@@ -381,9 +380,9 @@ body {
 
 /* لما  امر بالماوس */
 .circle:hover {
-  transform: scale(1.08);
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
   background: linear-gradient(135deg, #014f9d, #00c184);
+  transform: translateY(-15px);
 }
 .circle:hover span {
   color: white;
@@ -437,8 +436,6 @@ body {
   grid-template-columns: repeat(4, 1fr);
   row-gap: 50px;
   margin-bottom: 40px;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch; /* علشان يبقى سهل في الموبايل */
 }
 .p-channels-4 {
   margin-right: 125px;
@@ -922,8 +919,15 @@ body {
   .news-title {
     display: none;
   }
+  .exams {
+    height: 320px;
+  }
   .gif {
-    display: none;
+    display: flex;
+    width: 340px;
+    height: 340px;
+    margin-top: -95px;
+    margin-right: -40px;
   }
   .channels {
     display: flex;
@@ -987,7 +991,7 @@ body {
   .channels {
     display: flex;
     overflow-x: auto;
-    -webkit-overflow-scrolling: touch; /* علشان يبقى سهل في الموبايل */
+    -webkit-overflow-scrolling: touch;
     margin-right: 17px;
     padding-left: 30px;
     padding-top: 20px;
@@ -1031,8 +1035,15 @@ body {
   nav {
     display: none;
   }
+  .exams {
+    height: 320px;
+  }
   .gif {
-    display: none;
+    display: flex;
+    width: 340px;
+    height: 340px;
+    margin-top: -95px;
+    margin-right: 10px;
   }
   .channels {
     grid-template-columns: repeat(1, 1fr);
