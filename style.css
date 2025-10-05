@@ -88,6 +88,23 @@ nav {
   gap: 1rem; /* ✅ */
   margin-right: auto; /* ✅ */
 }
+.toggle {
+  margin-right: 620px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: white;
+  height: 90px;
+  width: 280px;
+  border-radius: 20px;
+  text-align: center;
+}
+.toggle__title {
+  margin-top: 25px;
+  margin-right: 45px;
+}
+.toggle__label {
+  margin-top: 25px;
+}
 
 .toggle__title {
   font-weight: bold; /* ✅ */
@@ -103,6 +120,7 @@ nav {
   width: 4.5rem; /* ✅ */
   height: 2.2rem; /* ✅ */
   cursor: pointer; /* ✅ */
+  direction: ltr;
   transition: background-color 0.3s; /* ✅ */
 }
 
@@ -126,12 +144,18 @@ nav {
 }
 
 .toggle__checkbox:checked + .toggle__label::after {
-  transform: translateX(-2.1rem); /* ✅ */
+  transform: translateX(2.1rem); /* ✅ */
   background: green; /* ✅ */
 }
 html:has(.toggle__checkbox:checked) {
   body {
     background: black;
+  }
+  .toggle__title {
+    color: white;
+  }
+  .toggle {
+    background-color: #111;
   }
   .video-loop {
     display: none;
