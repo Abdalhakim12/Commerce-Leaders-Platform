@@ -749,6 +749,9 @@ footer {
   --glass: rgba(255, 255, 255, 0.6);
   --shadow: 0 10px 30px rgba(4, 21, 55, 0.08);
 }
+.FAV {
+  border-radius: 50%;
+}
 
 * {
   box-sizing: border-box;
@@ -967,7 +970,7 @@ body {
     font-weight: bold;
   }
   nav a {
-    font-size: 12px;
+    font-size: 15px;
     font-weight: 900;
   }
   nav a:hover {
