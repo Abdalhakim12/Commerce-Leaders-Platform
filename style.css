@@ -37,7 +37,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 15px 40px;
-  position: sticky;
+  /* position: sticky; */
   top: 0;
   z-index: 2;
 }
@@ -888,6 +888,12 @@ body {
     padding-top: 20px;
     padding-bottom: 20px;
   }
+  .countdown-note {
+    padding-top: 40px;
+    font-weight: bold;
+    font-size: 13px;
+  }
+
   .toggle {
     margin-right: 40px;
     margin-top: 20px;
@@ -1002,7 +1008,7 @@ body {
     display: none;
   }
   .hero {
-    height: 20px;
+    height: 5px;
   }
   .links-container {
     display: grid;
@@ -1375,5 +1381,46 @@ body {
   }
   footer p {
     font-size: 26px;
+  }
+}
+.go-up {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #0077d9, #00c6ff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  z-index: 1000;
+  animation: pulse 2s infinite;
+}
+
+.go-up:hover {
+  background: linear-gradient(135deg, #00c6ff, #0077d9);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.arrow-up {
+  font-size: 22px;
+  color: white;
+  font-weight: bold;
+}
+
+/* أنيميشن نبض */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 119, 217, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 15px rgba(0, 119, 217, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(0, 119, 217, 0);
   }
 }

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Commerce Leaders</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="android-chrome-512x512.png" />
+    <link rel="icon" href="android-chrome-512x512.png" class="FAV" />
     <!-- Google tag (gtag.js) -->
     <script
       async
@@ -22,11 +22,17 @@
     </script>
   </head>
   <body>
+    <a href="#header"
+      ><div class="go-up">
+        <div class="arrow-up">🔼</div>
+      </div></a
+    >
+
     <video class="video-loop" autoplay loop muted>
       <source src="vedio-back.mp4" type="video/mp4" />
     </video>
     <!-- الهيدر -->
-    <header>
+    <header id="header">
       <div class="logo">Commerce Leaders</div>
 
       <nav>
@@ -338,9 +344,7 @@
           ><img src="icons8-facebook-50.svg"
         /></a>
         <a
-          href="www.linkedin.com/in/abdalhakim-mahmoud-abdo1212
-
-"
+          href="www.linkedin.com/in/abdalhakim-mahmoud-abdo1212"
           target="_blank"
           ><img src="icons8-linkedin-50.svg"
         /></a>
@@ -429,6 +433,15 @@
       // ابدأ التحديث
       updateCountdown();
       const timerInterval = setInterval(updateCountdown, 1000);
+      // JavaScript
+      window.addEventListener("scroll", function () {
+        const btn = document.getElementById("goUpBtn");
+        if (window.scrollY > 200) {
+          btn.classList.add("show");
+        } else {
+          btn.classList.remove("show");
+        }
+      });
     </script>
   </body>
 </html>
