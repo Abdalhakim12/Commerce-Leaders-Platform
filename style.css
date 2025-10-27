@@ -82,6 +82,11 @@ h1 {
 nav {
   margin-right: 60px;
 }
+.declare p {
+  color: white;
+  font-weight: bold;
+  font-size: 262px;
+}
 /* Toggle Component */
 .toggle {
   display: flex; /* ✅ */
@@ -1007,8 +1012,11 @@ body {
     padding-right: 20px;
     display: none;
   }
+  .declare p {
+    font-size: 18px;
+  }
   .hero {
-    height: 5px;
+    height: 400px;
   }
   .links-container {
     display: grid;
@@ -1396,9 +1404,9 @@ body {
   justify-content: center;
   cursor: pointer;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-  transition: all 0.3s ease;
+  transition: all 1s ease;
   z-index: 1000;
-  animation: pulse 2s infinite;
+  animation: pulse 2s infinite ease-in-out;
 }
 
 .go-up:hover {
