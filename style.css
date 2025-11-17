@@ -916,8 +916,9 @@ body {
   .burger-menu-bar {
     height: 0.3rem;
     width: 3.375rem;
-    background-color: rgb(255, 114, 0);
+    background-color: white;
     transition: 0.5s ease-in-out;
+    margin-right: 20px;
   }
   header:has(.burger-menu__checkbox:checked) .burger-menu-bar:nth-child(1) {
     transform: translateY(10px) rotate(40deg);
@@ -939,14 +940,16 @@ body {
     gap: 25px;
     top: 0;
     z-index: 1;
-    padding-right: 10px;
-    transition: 0.5s ease-in-out;
+    padding-right: 15px;
+    transition: 1s ease-in-out;
     opacity: 1;
     font-size: 20px;
     display: flex;
     flex-direction: column;
     color: #000;
     background-color: #004aad;
+    padding-bottom: 20px;
+    padding-top: 10px;
   }
   .toggle {
     margin-right: 40px;
@@ -1193,7 +1196,7 @@ body {
   .burger-menu-bar {
     height: 0.3rem;
     width: 3.375rem;
-    background-color: rgb(255, 114, 0);
+    background-color: white;
     transition: 0.5s ease-in-out;
   }
   header:has(.burger-menu__checkbox:checked) .burger-menu-bar:nth-child(1) {
