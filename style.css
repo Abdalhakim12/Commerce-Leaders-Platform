@@ -1228,6 +1228,8 @@ body {
     color: #000;
     background-color: #004aad;
     margin-right: 0;
+    padding-bottom: 20px;
+    padding-top: 10px;
   }
   .toggle {
     margin-right: 70px;
