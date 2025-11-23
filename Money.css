@@ -17,17 +17,74 @@ body {
 }
 
 .header h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin: 0;
 }
 
-.header p {
-  margin-top: 10px;
-  font-size: 1.2rem;
-  opacity: 0.9;
+.conte/* المواد */
+.h2-subjects {
+  display: flex;
+  justify-content: center;
+  color: #004aad;
+  margin-top: 30px;
+}
+.subjects {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  padding: 40px 20px;
+  max-width: 1400px;
+  margin: auto;
 }
 
-.content {
+.circle {
+  background: white;
+  border-radius: 20px;
+  width: 250px;
+  height: 250px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.08);
+  position: relative;
+  border: 2px rgba(1, 79, 157, 0.5) solid;
+}
+
+.circle span {
+  font-weight: 600;
+  color: #014f9d;
+  z-index: 2;
+  transition: color 0.3s ease;
+  font-weight: bold;
+}
+
+/* زرار الدخول */
+.circle a {
+  margin-top: 10px;
+  padding: 6px 14px;
+  background: #00c184;
+  color: white;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+}
+.circle {
+  transition: 1s ease-in-out;
+}
+/* لما  امر بالماوس */
+.circle:hover {
+  transform: scale(1.08);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+  background: #014f9d;
+}
+.circle:hover span {
+  color: white;
+}
+nt {
   padding: 30px 20px;
   max-width: 800px;
   margin: auto;
@@ -47,35 +104,14 @@ body {
   color: #1a73e8;
 }
 
-.section ul {
-  list-style: none;
-  padding: 0;
-}
-
-.section ul li {
-  margin-bottom: 10px;
-}
-
-.section a {
-  text-decoration: none;
-  color: #1a73e8;
-  font-weight: bold;
-  transition: color 0.3s ease;
-}
-
-.section a:hover {
-  color: #0c4da2;
-}
-main h1 {
-  font-size: 140px;
-  display: flex;
-  justify-content: center;
-}
-
 footer {
   background: #004aad;
   color: #fff;
   text-align: center;
   padding: 20px;
-  margin-bottom: -220px;
+}
+@media (max-width: 425px) {
+  .subjects {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
