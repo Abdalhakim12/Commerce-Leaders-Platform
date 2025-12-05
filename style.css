@@ -789,9 +789,7 @@ body {
     padding-bottom: 20px;
   }
   .logo {
-    position: absolute;
-    margin-right: 140px;
-    font-size: 16px;
+    display: none;
   }
   .subject h2 {
     margin-top: -20px;
