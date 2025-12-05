@@ -1254,8 +1254,7 @@ body {
     height: 180px;
   }
   .logo {
-    font-size: 48px;
-    padding-right: 60px;
+    display: none;
   }
 
   .channels {
