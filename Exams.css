@@ -1,0 +1,171 @@
+/* الأساسيات */
+body {
+  font-family: "Cairo", sans-serif;
+  background: #f0f2f5;
+  margin: 0;
+  padding: 0;
+}
+
+/* الحاوية */
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+/* ===========================
+        الـ Header
+=========================== */
+header {
+  background: linear-gradient(90deg, #004aad, #006fd6);
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(10px);
+}
+
+header .logo {
+  font-size: 1.8rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+header nav a {
+  margin-left: 25px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+header nav a:hover {
+  color: #cce6ff;
+}
+
+/* ===========================
+         العنوان
+=========================== */
+h1 {
+  margin-bottom: 35px;
+  font-size: 36px;
+  color: #333;
+  font-weight: 800;
+}
+
+/* ===========================
+         الـ Cards
+=========================== */
+.subject {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(8px);
+  padding: 25px;
+  margin-bottom: 25px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);
+  transition: 0.3s ease;
+}
+
+.subject:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.subject h2 {
+  margin-top: -5px;
+  font-size: 34px;
+  color: #004aad;
+}
+
+/* الروابط */
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.links a {
+  text-decoration: none;
+  background: #004aad;
+  color: white;
+  padding: 11px 26px;
+  border-radius: 10px;
+  transition: 0.3s;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.links a:hover {
+  background: #003070;
+  transform: scale(1.05);
+}
+
+/* ===========================
+       الموبايل
+=========================== */
+
+.burger-menu__checkbox {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  header {
+    padding: 15px 20px;
+  }
+
+  nav {
+    display: none;
+  }
+
+  /* البرجر */
+  .burger-menu {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+  }
+
+  .burger-menu-bar {
+    width: 32px;
+    height: 4px;
+    background: #fff;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+
+  /* فتح القائمة */
+  .burger-menu__checkbox:checked ~ nav {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 65px;
+    right: 15px;
+    background: rgba(0, 74, 173, 0.95);
+    padding: 20px;
+    border-radius: 12px;
+    gap: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  nav a {
+    margin: 0 !important;
+    font-size: 18px;
+  }
+
+  /* الأنميشن عند الضغط */
+  .burger-menu__checkbox:checked + .burger-menu .burger-menu-bar:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+  }
+  .burger-menu__checkbox:checked + .burger-menu .burger-menu-bar:nth-child(2) {
+    opacity: 0;
+  }
+  .burger-menu__checkbox:checked + .burger-menu .burger-menu-bar:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+  }
+}
