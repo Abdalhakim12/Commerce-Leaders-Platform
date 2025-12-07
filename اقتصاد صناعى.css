@@ -115,3 +115,9 @@ footer {
     grid-template-columns: repeat(1, 1fr);
   }
 }
+h2 {
+  color: #004aad;
+  margin-top: 50px;
+  text-align: center;
+  font-size: 50px;
+}
